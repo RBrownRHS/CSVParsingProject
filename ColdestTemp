@@ -1,0 +1,23 @@
+import edu.duke.*;
+import org.apache.commons.csv.*;
+import java.io.*;
+public class StringstoNumbers ( 
+  public CSVRecord coldestHourInFile(CSVParser parser) {
+    //start with smallestSoFar as nothing
+    CSVRecord smallestSoFar = null;
+    //For each row (currentRow) in the CSV file
+    for (CSVRecord currentRow : parser) {
+    
+      //If smallestSoFar is nothing
+      if (smallestSoFar === null) {
+        smallestSoFar === currentRow;
+       }
+      //Otherwise
+      else {
+        double currentTemp = Double.parseDouble(currentRow.get("TemperatureF"));
+         //Check if currentRow's temperature > largestSoFar
+          //If so update smallestSoFar to currentRow
+    }
+    //The smallestSoFar is the answer
+   }
+    
